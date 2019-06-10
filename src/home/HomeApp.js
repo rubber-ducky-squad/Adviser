@@ -2,6 +2,7 @@ import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import Footer from '../shared/Footer.js';
 import Inspiration from './Inspiration.js';
+import adviceApi from '../services/advice-api.js';
 
 class HomeApp extends Component {
     render() {
@@ -13,11 +14,19 @@ class HomeApp extends Component {
         const header = new Header();
         dom.insertBefore(header.render(), main);   
 
-        const inspiration = new Inspiration();
+        const inspiration = new Inspiration({ advice: [] });
         main.appendChild(inspiration.render());
         
         const footer = new Footer();
         footerTag.appendChild(footer.render());
+
+        adviceApi.getAdvice()
+            .then(response => {
+                inspiration.update({ advice: response.slip });
+            })
+            .catch(err => {
+                console.log(err);
+            });
         
         return dom;
     }
