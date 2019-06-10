@@ -16,6 +16,7 @@ footer {
     height: 55px; */
 }
 
+
 .advice {
     color: aliceblue;
     position: absolute;
@@ -23,6 +24,12 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.685);
+    z-index: auto;
+}
+
+.loading {
+    position: absolute;
+    z-index: 10;
 }
 
 .shuffle {
