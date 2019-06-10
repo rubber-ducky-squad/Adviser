@@ -8,7 +8,12 @@ header {
 }
 
 footer {
-    background-color: rgba(84, 84, 133, 0.466);
+    background-color: rgba(84, 84, 133, 0.836);
+    /* position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px; */
 }
 
 .advice {
@@ -18,4 +23,13 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.685);
+}
+
+.shuffle {
+    background-color: rgba(11, 51, 136, 0.664);
+    border: none;
+    width: 90px;
+    margin: 10px;
+    color: antiquewhite;
+    border-radius: 5px;
 }

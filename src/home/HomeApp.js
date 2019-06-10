@@ -42,7 +42,7 @@ class HomeApp extends Component {
                 });
         }
         loadInspirations();
-        
+
         shuffleButton.addEventListener('click', () => {
             loadInspirations();
         });
@@ -53,7 +53,7 @@ class HomeApp extends Component {
         return /*html*/ `
             <div>
                 <main>
-                <button>🔁</button>
+                <button class="shuffle">SHUFFLE</button>
                 </main>
                 <footer>
                 </footer>

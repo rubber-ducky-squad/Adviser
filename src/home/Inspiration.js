@@ -8,7 +8,7 @@ class Inspiration extends Component {
 
         return /*html*/`
             <div class="advice-pic">
-                <h1 class="advice">${advice.advice}</h1>
+                <h1 class="advice">"${advice.advice}"</h1>
                 <img src="${pic.url}"><br>    
             </div>
         `;
