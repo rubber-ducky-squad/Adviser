@@ -23,7 +23,6 @@ class HomeApp extends Component {
             <div>
                 <main>
                 </main>
-
                 <footer>
                 </footer>
             </div>

@@ -5,9 +5,8 @@ import { auth } from '../services/firebase.js';
 class Footer extends Component {
     render() {
         const dom = this.renderDOM();
-        const div = dom.querySelector('.profile');
         const profile = new Profile();
-        div.appendChild(profile.render());
+        dom.appendChild(profile.render());
 
         auth.onAuthStateChanged(user => {
             profile.update({ user });
@@ -22,11 +21,9 @@ class Footer extends Component {
                     <p>home</p>
                     <p>Favorites</p>
                 </section>
-
-                <div class="profile"></div>
             </div>
     `;
-}
+    }
 }
 
 export default Footer;
