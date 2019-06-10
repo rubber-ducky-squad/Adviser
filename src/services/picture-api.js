@@ -1,4 +1,4 @@
-const URL = 'https://picsum.photos/300';
+const URL = 'https://picsum.photos/500';
 
 const picApi = {
     getPic() {

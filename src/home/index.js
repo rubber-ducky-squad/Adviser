@@ -4,7 +4,9 @@ import { auth } from '../services/firebase.js';
 
 const root = document.getElementById('app');
 
-auth.onAuthStateChanged(() => {
-    const homeApp = new HomeApp();
-    root.appendChild(homeApp.render());
+auth.onAuthStateChanged((user) => {
+    if(user) {
+        const homeApp = new HomeApp();
+        root.appendChild(homeApp.render());  
+    }
 });
