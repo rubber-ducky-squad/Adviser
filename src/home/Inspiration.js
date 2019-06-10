@@ -1,6 +1,18 @@
 import Component from '../Component.js';
+import FavoriteButton from '../shared/FavoriteButton.js';
 
 class Inspiration extends Component {
+
+    render() {
+        const dom = this.renderDOM();
+        const favoriteButton = new FavoriteButton({ 
+            isFavorite: false,
+            onFavorite: (makeFavorite)
+        });
+        dom.appendChild(favoriteButton.render());
+
+        return dom;   
+    }
 
     renderTemplate() {
         const advice = this.props.advice;

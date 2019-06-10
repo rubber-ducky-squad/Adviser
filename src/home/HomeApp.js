@@ -13,7 +13,6 @@ class HomeApp extends Component {
         const footerTag = dom.querySelector('footer');
         const shuffleButton = dom.querySelector('button');
 
-
         const header = new Header();
         dom.insertBefore(header.render(), main);   
 
