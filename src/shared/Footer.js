@@ -1,6 +1,6 @@
 import Component from '../Component.js';
 import Profile from '../shared/Profile.js';
-// import { auth } from '../services/firebase.js';
+import { auth } from '../services/firebase.js';
 
 class Footer extends Component {
     render() {
@@ -9,9 +9,9 @@ class Footer extends Component {
         const profile = new Profile();
         div.appendChild(profile.render());
 
-        // auth.onAuthStateChanged(user => {
-        //     profile.update({ user });
-        // });
+        auth.onAuthStateChanged(user => {
+            profile.update({ user });
+        });
 
         return dom;
     }
