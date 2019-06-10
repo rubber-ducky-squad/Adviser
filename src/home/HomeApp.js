@@ -17,7 +17,7 @@ class HomeApp extends Component {
         const header = new Header();
         dom.insertBefore(header.render(), main);   
 
-        const loading = new Loading();
+        const loading = new Loading({ loaded: false });
         main.appendChild(loading.render());
 
         const inspiration = new Inspiration({ advice: [], pic: [] });
@@ -28,6 +28,7 @@ class HomeApp extends Component {
 
         
         function loadInspirations() {
+            loading.update({ loaded: true });
             
             adviceApi.getAdvice()
                 .then(response => {
@@ -43,6 +44,9 @@ class HomeApp extends Component {
                 })
                 .catch(err => {
                     console.log(err);
+                })
+                .finally(() => {
+                    loading.update({ loaded: false });
                 });
         }
         loadInspirations();
