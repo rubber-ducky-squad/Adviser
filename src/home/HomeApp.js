@@ -4,6 +4,7 @@ import Footer from '../shared/Footer.js';
 import Inspiration from './Inspiration.js';
 import adviceApi from '../services/advice-api.js';
 import picApi from '../services/picture-api.js';
+import Loading from '../shared/Loading.js';
 
 class HomeApp extends Component {
     render() {
@@ -15,6 +16,9 @@ class HomeApp extends Component {
 
         const header = new Header();
         dom.insertBefore(header.render(), main);   
+
+        const loading = new Loading();
+        main.appendChild(loading.render());
 
         const inspiration = new Inspiration({ advice: [], pic: [] });
         main.appendChild(inspiration.render());
