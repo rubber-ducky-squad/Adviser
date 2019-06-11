@@ -40,7 +40,7 @@ class AuthApp extends Component {
         return /*html*/ ` 
             <div>
                 <main>
-                    <p>Sign in</p>
+                    <p>Sign in  or Create New Acount</p>
                     <div id="firebaseui-auth-container"></div>
                 </main>
             </div>
