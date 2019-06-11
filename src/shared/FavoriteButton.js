@@ -1,5 +1,6 @@
 import Component from '../Component.js';
 
+
 class FavoriteButton extends Component {
 
     render() {
@@ -7,7 +8,7 @@ class FavoriteButton extends Component {
 
 
         favButton.addEventListener('click', () => {
-            // this.props.onFavorite(!this.props.isFavorite);
+            this.props.onFavorite(!this.props.isFavorite);
         });
 
 
@@ -21,7 +22,5 @@ class FavoriteButton extends Component {
             <button class="favorite-button ${isFavorite ? 'favorite' : ''}">${heart}</button>
         `;
     }
-
-
 }
 export default FavoriteButton;
