@@ -25,7 +25,6 @@ class HomeApp extends Component {
         const footer = new Footer();
         footerTag.appendChild(footer.render());
 
-        
         function loadInspirations() {
             loading.update({ loaded: true });
             

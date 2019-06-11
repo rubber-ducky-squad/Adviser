@@ -11,8 +11,7 @@ class Profile extends Component {
             button.addEventListener('click', () => {
                 auth.signOut();
             });
-        }
-            
+        }   
 
         return dom;
     }
