@@ -4,7 +4,7 @@ class Header extends Component {
     renderTemplate() {
         return /*html*/ `
             <header>
-                <h1 class="header">Moddo</h1>
+                <h1 class="header">MODDO</h1>
             </header>
         `;
     }

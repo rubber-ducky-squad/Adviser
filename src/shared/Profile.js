@@ -25,10 +25,10 @@ class Profile extends Component {
         const avatar = user.photoURL || './assets/profile.png';
 
         return /*html*/`
-            <div>
-                <img src="${avatar}" alt="user profile image">
+            <div class="profile">
+                <button class="sign-out">Sign Out</button>
+                <img src="${avatar}" class="avatar" alt="user profile image">
                 <span>${user.displayName}</span>
-                <button>Sign Out</button>
             </div>
         `;
     }

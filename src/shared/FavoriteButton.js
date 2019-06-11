@@ -13,7 +13,7 @@ class FavoriteButton extends Component {
 
     renderTemplate() {
         const isFavorite = this.props.isFavorite;
-        const heart = isFavorite ? '♥' : '♡';
+        const heart = isFavorite ? '💓' : '♡';
         return /*html*/ `
             <button class="favorite-button ${isFavorite ? 'favorite' : ''}">${heart}</button>
         `;
