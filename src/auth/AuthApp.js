@@ -11,7 +11,6 @@ class AuthApp extends Component {
         const header = new Header();
         dom.prepend(header.render());
 
-
         ui.start('#firebaseui-auth-container', {
             signInOptions: [
                 firebase.auth.EmailAuthProvider.PROVIDER_ID,
@@ -47,4 +46,5 @@ class AuthApp extends Component {
         `;
     }
 }
+
 export default AuthApp;

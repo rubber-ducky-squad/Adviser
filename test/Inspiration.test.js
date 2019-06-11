@@ -17,7 +17,7 @@ test('renders with full user props', assert => {
     const expected = /*html*/ `
         <div class="advice-pic">
             <h1 class="advice">"Do not pee on the toilet seat"</h1>
-            <img src="https://lh5.googleusercontent.com/-EnRNBAYvURk/AAAAAAAAAAI/AAAAAAAAAK8/cMJNFAVX5SE/photo.jpg"><br>    
+            <img src="https://lh5.googleusercontent.com/-EnRNBAYvURk/AAAAAAAAAAI/AAAAAAAAAK8/cMJNFAVX5SE/photo.jpg" alt="random stock photo"><br>    
         </div>
     `;
 

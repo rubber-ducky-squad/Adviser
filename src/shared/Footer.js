@@ -14,6 +14,7 @@ class Footer extends Component {
 
         return dom;
     }
+    
     renderTemplate() {
         return /*html*/`
             <div>
