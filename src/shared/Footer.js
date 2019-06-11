@@ -19,7 +19,7 @@ class Footer extends Component {
         return /*html*/`
             <div>
                 <section class="navigation">
-                    <h2><a href="">Home</a> || <a href="">Favorites</a></h2>
+                    <h2><a href="/index.html">Home</a> || <a href="/favorites.html">Favorites</a></h2>
                 </section>
             </div>
     `;
