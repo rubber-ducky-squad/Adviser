@@ -9,14 +9,16 @@ class Inspiration extends Component {
         const advice = this.props.advice;
         const pic = this.props.pic;
 
-        const userFavoritesRef = favoritesRef.push()
-            .child(auth.currentUser.uid); 
+        const userFavoritesRef = favoritesRef
+            .child(auth.currentUser.uid)
+            .push();
 
         const favoriteButton = new FavoriteButton({ 
             isFavorite: false,
             onFavorite: (makeFavorite) => {
                 if(makeFavorite) {
                     userFavoritesRef.set({
+                        key: userFavoritesRef.key,
                         advice: advice.advice,
                         pic: pic.url,
                         date: Date()

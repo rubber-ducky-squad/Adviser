@@ -6,9 +6,8 @@ class FavoritesList extends Component {
         const dom = this.renderDOM();
 
         const favorites = this.props.favorites;
-        console.log(favorites);
         favorites.forEach(favorite => {
-            const favoritesItem = new FavoritesItem({ favorites: favorite });
+            const favoritesItem = new FavoritesItem({ favorite });
             dom.appendChild(favoritesItem.render());
         }); 
 
