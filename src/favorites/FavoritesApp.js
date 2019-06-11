@@ -3,6 +3,7 @@ import Header from '../shared/Header.js';
 import Footer from '../shared/Footer.js';
 import FavoritesList from './FavoritesList.js';
 import { auth, favoritesRef } from '../services/firebase.js';
+
 class FavoritesApp extends Component {
     render() {
         const dom = this.renderDOM();
@@ -28,6 +29,7 @@ class FavoritesApp extends Component {
 
         return dom;
     }
+    
     renderTemplate() {
         return /*html*/ `
             <div>

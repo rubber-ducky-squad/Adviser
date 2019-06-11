@@ -2,7 +2,6 @@ import Component from '../Component.js';
 import FavoriteButton from '../shared/FavoriteButton.js';
 import { auth, favoritesRef } from '../services/firebase.js';
 
-
 class FavoritesItem extends Component {
     render() {
         const dom = this.renderDOM();
@@ -40,4 +39,5 @@ class FavoritesItem extends Component {
         `;
     }
 }
+
 export default FavoritesItem;

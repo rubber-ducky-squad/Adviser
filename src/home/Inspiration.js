@@ -3,7 +3,6 @@ import FavoriteButton from '../shared/FavoriteButton.js';
 import { auth, favoritesRef } from '../services/firebase.js';
 
 class Inspiration extends Component {
-
     render() {
         const dom = this.renderDOM();
         const advice = this.props.advice;
