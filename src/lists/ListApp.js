@@ -3,6 +3,7 @@ import Header from '../shared/Header.js';
 import Footer from '../shared/Footer.js';
 import TaskList from './TaskList.js';
 import AddTaskList from './AddTaskList.js';
+import { auth, listRef } from '../services/firebase.js';
 
 class ListApp extends Component {
     render() {
@@ -16,11 +17,19 @@ class ListApp extends Component {
         const addTaskList = new AddTaskList();
         main.appendChild(addTaskList.render());
 
-        const taskList = new TaskList();
+        const taskList = new TaskList({ lists: [] });
         main.appendChild(taskList.render());
 
         const footer = new Footer();
         footerTag.appendChild(footer.render());
+
+        listRef
+            .child(auth.currentUser.uid)
+            .on('value', snapshot => {
+                const value = snapshot.val();
+                const lists = value ? Object.values(value) : [];
+                taskList.update({ lists });
+            });
 
         return dom;
     }

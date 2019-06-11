@@ -8,7 +8,10 @@ class AddTaskList extends Component {
        
         form.addEventListener('submit', event => {
             event.preventDefault();
-            const listsRef = listRef.push();
+            const listsRef = listRef
+                .child(auth.currentUser.uid)
+                .push();
+        
 
             const newList = {
                 name: input.value
@@ -34,7 +37,7 @@ class AddTaskList extends Component {
             <form id="task-form">
                 <label>
                     Add a List
-                    <input name="task">
+                    <input name="task" required>
                 </label>
                 <button>Add</button>
             </form>
