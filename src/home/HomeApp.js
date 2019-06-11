@@ -67,7 +67,6 @@ class HomeApp extends Component {
             </div>
         `;
 
-
     }
 }
 
