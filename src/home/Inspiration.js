@@ -44,7 +44,7 @@ class Inspiration extends Component {
         return /*html*/`
             <div class="advice-pic">
                 <h1 class="advice">"${advice.advice}"</h1>
-                <img src="${pic.url}"><br>    
+                <img src="${pic.url}" alt="random stock photo"><br>    
             </div>
         `;
     }
