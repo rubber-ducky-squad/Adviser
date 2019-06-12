@@ -1,14 +1,19 @@
 import Component from '../Component.js';
 import { auth, listRef } from '../services/firebase.js';
+import AddTodo from './AddTodo.js';
 
 class TaskItem extends Component {
     render() {
         const dom = this.renderDOM();
         const removeButton = dom.querySelector('.delete-list');
         const listButton = dom.querySelector('.list-button');
+        const modalContent = dom.querySelector('.modal-content');
         const modal = dom.querySelector('#modal');
         const list = this.props.list;
         const key = auth.currentUser.uid;
+
+        const addTodo = new AddTodo();
+        modalContent.appendChild(addTodo.render());
 
    
         const listRefs = listRef
