@@ -9,6 +9,7 @@ class TaskItem extends Component {
         const listButton = dom.querySelector('.list-button');
         const modalContent = dom.querySelector('.modal-content');
         const modal = dom.querySelector('#modal');
+        const modalExit = dom.querySelector('.modal-exit');
         const list = this.props.list;
         const key = auth.currentUser.uid;
 
@@ -28,6 +29,10 @@ class TaskItem extends Component {
             modal.style.display = 'block';
         });
 
+        modalExit.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
         return dom;
     }
 
@@ -45,6 +50,7 @@ class TaskItem extends Component {
                 <div id="modal" class="modal">
                     <div class="modal-content">
                         <h1>hello</h1>
+                        <button class="modal-exit">X</button>
                     </div>
                 </div>
                 </section>
