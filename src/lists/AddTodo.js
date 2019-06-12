@@ -42,7 +42,7 @@ class AddToDo extends Component {
             </label>
             <label>
                     Date to complete task
-                    <input id="date" name="date" type="date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    <input id="date" name="date" type="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                 </label>
         <button>Add</button>
     </form>

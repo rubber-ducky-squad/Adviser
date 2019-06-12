@@ -28,6 +28,17 @@ class TodoItem extends Component {
         if(todo.completed) {
             checked = 'checked';
         }
+
+        if(todo.date === '') {
+            return /*html*/`
+            <li>
+                <label for="${todo.todo}">
+                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo} ${todo.date}
+                    <button>X</button>
+                </label>
+            </li>
+        `;
+        }
         return /*html*/`
             <li>
                 <label for="${todo.todo}">
