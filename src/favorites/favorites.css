@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+    background-color: rgba(148, 148, 230, 0.288);
+}
+
+header {
+    background-color: rgba(148, 148, 230, 0.466);
+    color: rgb(78, 2, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: rgba(84, 84, 133, 0.836);
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+}
+.navigation {
+    position: fixed;
+    bottom: 5px;
+    left: 20px;
+}
+
+.profile {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;  
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+.sign-out {
+    background-color: rgba(11, 51, 136, 0.664);
+    border: none;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+main {
+    position: relative;
+}
+
+.favorites-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    box-shadow: 0px 2px 2px #aaa;
+    background: rgba(255, 255, 255, 0.39);
+    padding: 10px 0 10px 0;
+    height: 300px;
+    width: 300px;
+}
+
+.images {
+    width: 280px;
+    height: 280px;
+}
+
+.advice {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.685);
+    text-shadow: 5px 5px  black;
+    z-index: auto;
+    width: 260px;
+    padding: 5px;
+}
+
+.favorite-button {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+    left:50% ;
+    transform: translate(-50%);
+    color: rgb(255, 60, 0);
+    background-color: rgba(248, 248, 252, 0);
+    font-size: 40px;
+    outline-style: none;
+}
+
+.favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 7px;
+    gap: 7px;
+    padding: 0;
+}

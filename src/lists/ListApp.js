@@ -1,10 +1,11 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import Footer from '../shared/Footer.js';
-import FavoritesList from './FavoritesList.js';
-import { auth, favoritesRef } from '../services/firebase.js';
+import TaskList from './TaskList.js';
+import AddTaskList from './AddTaskList.js';
+import { auth, listRef } from '../services/firebase.js';
 
-class FavoritesApp extends Component {
+class ListApp extends Component {
     render() {
         const dom = this.renderDOM();
         const main = dom.querySelector('main');
@@ -13,31 +14,35 @@ class FavoritesApp extends Component {
         const header = new Header();
         dom.insertBefore(header.render(), main);
 
-        const favoritesList = new FavoritesList({ favorites: [] });
-        main.appendChild(favoritesList.render()); 
-        
+        const addTaskList = new AddTaskList();
+        main.appendChild(addTaskList.render());
+
+        const taskList = new TaskList({ lists: [] });
+        main.appendChild(taskList.render());
+
         const footer = new Footer();
         footerTag.appendChild(footer.render());
 
-        favoritesRef
+        listRef
             .child(auth.currentUser.uid)
             .on('value', snapshot => {
                 const value = snapshot.val();
-                const favorites = value ? Object.values(value) : [];
-                favoritesList.update({ favorites });
-            });       
+                const lists = value ? Object.values(value) : [];
+                taskList.update({ lists });
+            });
 
         return dom;
     }
-    
+
     renderTemplate() {
-        return /*html*/ `
+        return /*html*/`
             <div>
-            <main></main>
-            <footer></footer>
+                <main>
+                </main>
+                <footer>
+                </footer>
             </div>
         `;
     }
 }
-
-export default FavoritesApp;
+export default ListApp;
