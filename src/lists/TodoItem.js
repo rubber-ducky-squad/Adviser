@@ -24,6 +24,7 @@ class TodoItem extends Component {
 
     renderTemplate() {
         const todo = this.props.todo;
+        const date = new Date(todo.date);
         let checked = '';
         if(todo.completed) {
             checked = 'checked';
@@ -33,7 +34,7 @@ class TodoItem extends Component {
             return /*html*/`
             <li>
                 <label for="${todo.todo}">
-                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo} ${todo.date}
+                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo} ${date.toLocaleDateString()}
                     <button>X</button>
                 </label>
             </li>
@@ -42,7 +43,7 @@ class TodoItem extends Component {
         return /*html*/`
             <li>
                 <label for="${todo.todo}">
-                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}, complete by: ${todo.date}
+                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}, complete by: ${date.toLocaleDateString()}
                     <button>X</button>
                 </label>
             </li>
