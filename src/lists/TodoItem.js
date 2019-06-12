@@ -5,11 +5,18 @@ class TodoItem extends Component {
     render() {
         const dom = this.renderDOM();
         const removeButton = dom.querySelector('button');
+        const checkbox = dom.querySelector('#checkbox');
         const list = this.props.list;
         const todo = this.props.todo;
      
         removeButton.addEventListener('click', () => {
             todoRef.child(auth.currentUser.uid).child(list.key).child(todo.key).remove();
+        });
+        
+        checkbox.addEventListener('change', () => {
+            todoRef.child(auth.currentUser.uid).child(list.key).child(todo.key).update({
+                completed: checkbox.checked
+            });
         });
 
         return dom;
@@ -17,10 +24,14 @@ class TodoItem extends Component {
 
     renderTemplate() {
         const todo = this.props.todo;
+        let checked = '';
+        if(todo.completed) {
+            checked = 'checked';
+        }
         return /*html*/`
             <li>
                 <label for="${todo.todo}">
-                    <input name="checkbox" value="${todo.todo}" type="checkbox">${todo.todo}, complete by: ${todo.date}
+                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}, complete by: ${todo.date}
                     <button>X</button>
                 </label>
             </li>
