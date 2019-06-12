@@ -40,20 +40,20 @@ class TaskItem extends Component {
         return /*html*/`
             <li class="task-item">
             <span>
-                <p>${list.title}</p>
+                <p><h2>${list.title}</h2></p>
                 <section>
-                    <button class="list-button">go to list</button>
-                    <button class="delete-list">X</button>
+                    <button class="list-button">Open List</button>
+                    <button class="delete-list">Delete</button>
                 </section>
+                </span>
                 <section>
                 <div id="modal" class="modal">
                     <div class="modal-content">
-                        <h1>hello</h1>
+                        <h1>List Title</h1>
                         <button class="modal-exit">X</button>
                     </div>
                 </div>
                 </section>
-            </span>
             </li>
         `;
     }

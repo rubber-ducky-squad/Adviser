@@ -39,7 +39,7 @@ class AddTaskList extends Component {
                     Add a List
                     <input name="task" required>
                 </label>
-                <button>Add</button>
+                <button class="add-list">Add</button>
             </form>
         `;
     }
