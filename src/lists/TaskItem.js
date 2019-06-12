@@ -20,9 +20,11 @@ class TaskItem extends Component {
         const todoList = new TodoList({ todos: [] });
         modalContent.appendChild(todoList.render());
 
-        todoRef
+        const todoListRef = todoRef
             .child(auth.currentUser.uid)
-            .child(list.key)
+            .child(list.key);
+
+        todoListRef
             .on('value', snapshot => {
                 const value = snapshot.val();
                 const todos = value ? Object.values(value) : [];
@@ -34,7 +36,8 @@ class TaskItem extends Component {
             .child(list.key);
  
         removeButton.addEventListener('click', () => {
-            listRefs.remove();
+            todoListRef.remove();
+            listRefs.remove();   
         });
 
         listButton.addEventListener('click', () => {
@@ -62,7 +65,6 @@ class TaskItem extends Component {
                 <section>
                 <div id="modal" class="modal">
                     <div class="modal-content">
-                        <h1>List Title</h1>
                         <button class="modal-exit">X</button>
                     </div>
                 </div>
