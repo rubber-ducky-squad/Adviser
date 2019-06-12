@@ -17,7 +17,7 @@ class TaskItem extends Component {
         const addTodo = new AddTodo({ list });
         modalContent.appendChild(addTodo.render());
 
-        const todoList = new TodoList({ todos: [] });
+        const todoList = new TodoList({ todos: [], list });
         modalContent.appendChild(todoList.render());
 
         const todoListRef = todoRef
