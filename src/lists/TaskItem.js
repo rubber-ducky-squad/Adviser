@@ -1,6 +1,7 @@
 import Component from '../Component.js';
-import { auth, listRef } from '../services/firebase.js';
+import { auth, listRef, todoRef } from '../services/firebase.js';
 import AddTodo from './AddTodo.js';
+import TodoList from './TodoList.js';
 
 class TaskItem extends Component {
     render() {
@@ -15,6 +16,18 @@ class TaskItem extends Component {
 
         const addTodo = new AddTodo({ list });
         modalContent.appendChild(addTodo.render());
+
+        const todoList = new TodoList({ todos: [] });
+        modalContent.appendChild(todoList.render());
+
+        todoRef
+            .child(auth.currentUser.uid)
+            .child(list.key)
+            .on('value', snapshot => {
+                const value = snapshot.val();
+                const todos = value ? Object.values(value) : [];
+                todoList.update({ todos });
+            });
 
         const listRefs = listRef
             .child(key)
