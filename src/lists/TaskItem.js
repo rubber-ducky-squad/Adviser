@@ -13,7 +13,7 @@ class TaskItem extends Component {
         const list = this.props.list;
         const key = auth.currentUser.uid;
 
-        const addTodo = new AddTodo();
+        const addTodo = new AddTodo({ list });
         modalContent.appendChild(addTodo.render());
 
         const listRefs = listRef
