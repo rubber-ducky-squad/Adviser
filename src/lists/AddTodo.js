@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-import { auth, todoRef, listRef } from '../services/firebase.js';
+import { auth, todoRef } from '../services/firebase.js';
 
 class AddToDo extends Component {
     render() {
