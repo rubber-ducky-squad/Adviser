@@ -19,6 +19,8 @@ class HomeApp extends Component {
         const todoModal = dom.querySelector('#home-modal');
         const exitModal = dom.querySelector('.modal-exit');
         const insideModal = dom.querySelector('.home-modal-content');
+        const alertModal = dom.querySelector('.alert-modal');
+        const alertModalExit = dom.querySelector('.alert-modal-exit');
 
         const header = new Header();
         dom.insertBefore(header.render(), main);   
@@ -90,8 +92,20 @@ class HomeApp extends Component {
 
         loadInspirations();
 
+        let count = 0;
+
         shuffleButton.addEventListener('click', () => {
             loadInspirations();
+            count++;
+            if(count > 5) {
+                alertModal.style.display = 'block';
+                loading.update({ loaded: false });
+                shuffleButton.disabled = true;
+            }
+        });
+
+        alertModalExit.addEventListener('click', () => {
+            alertModal.style.display = 'none';
         });
 
         return dom;
@@ -108,11 +122,17 @@ class HomeApp extends Component {
                             <button class="modal-exit">X</button>
                         </div>
                     </div>
+                    <div id="alert-modal" class="alert-modal">
+                        <div class="alert-modal-content">
+                            <p>When life gives you a moddo you do not 
+                            like, make moddo-aid, (aka, pick one and stick with it</p>
+                            <button class="alert-modal-exit">X</button>
+                        </div>
+                    </div>
                 </main>
                 <footer></footer>
             </div>
         `;
-
     }
 }
 
