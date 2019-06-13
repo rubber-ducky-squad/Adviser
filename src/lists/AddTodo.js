@@ -37,11 +37,11 @@ class AddToDo extends Component {
         return /*html*/`
         <form id="todo-form">
             <label>
-                Add a Task
+                Add a todo
                 <input id="task" name="task" required>
             </label>
             <label>
-                Date to complete task
+                Date to complete todo
                 <input id="date" name="date" type="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
             </label>
         <button>Add</button>
