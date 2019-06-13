@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
+
+footer h2 {
+    font-family: 'Dokdo', cursive;
+    font-size: 2.2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: rgb(78, 2, 255);
+    color: aliceblue
+}
