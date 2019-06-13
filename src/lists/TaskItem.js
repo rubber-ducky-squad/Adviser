@@ -1,6 +1,7 @@
 import Component from '../Component.js';
-import { auth, listRef } from '../services/firebase.js';
+import { auth, listRef, todoRef } from '../services/firebase.js';
 import AddTodo from './AddTodo.js';
+import TodoList from './TodoList.js';
 
 class TaskItem extends Component {
     render() {
@@ -13,15 +14,30 @@ class TaskItem extends Component {
         const list = this.props.list;
         const key = auth.currentUser.uid;
 
-        const addTodo = new AddTodo();
+        const addTodo = new AddTodo({ list });
         modalContent.appendChild(addTodo.render());
+
+        const todoList = new TodoList({ todos: [], list });
+        modalContent.appendChild(todoList.render());
+
+        const todoListRef = todoRef
+            .child(auth.currentUser.uid)
+            .child(list.key);
+
+        todoListRef
+            .on('value', snapshot => {
+                const value = snapshot.val();
+                const todos = value ? Object.values(value) : [];
+                todoList.update({ todos });
+            });
 
         const listRefs = listRef
             .child(key)
             .child(list.key);
  
         removeButton.addEventListener('click', () => {
-            listRefs.remove();
+            todoListRef.remove();
+            listRefs.remove();   
         });
 
         listButton.addEventListener('click', () => {
@@ -49,7 +65,6 @@ class TaskItem extends Component {
                 <section>
                 <div id="modal" class="modal">
                     <div class="modal-content">
-                        <h1>List Title</h1>
                         <button class="modal-exit">X</button>
                     </div>
                 </div>

@@ -41,6 +41,9 @@ class Inspiration extends Component {
     renderTemplate() {
         const advice = this.props.advice;
         const pic = this.props.pic;
+        if(!pic.url) {
+            pic.url = '../../assets/placeholder.jpg';
+        }
 
         return /*html*/`
             <div class="advice-pic">

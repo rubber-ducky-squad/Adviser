@@ -11,24 +11,17 @@ class AddTaskList extends Component {
             const listsRef = listRef
                 .child(auth.currentUser.uid)
                 .push();
-        
-
-            const newList = {
-                name: input.value
-            };
-
+            
             const listItem = {
                 key: listsRef.key,
                 owner: auth.currentUser.uid,
-                title: newList.name
+                title: input.value
             };
-
+                
             listsRef.set(listItem).then(() => {
                 form.reset();
             });
         });
-
-
         return form;
     }
 
