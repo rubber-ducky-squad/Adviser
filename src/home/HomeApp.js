@@ -76,11 +76,13 @@ class HomeApp extends Component {
                     loading.update({ loaded: false });
                 });
         }
+
         loadInspirations();
 
         shuffleButton.addEventListener('click', () => {
             loadInspirations();
         });
+
         return dom;
     }
 
@@ -88,16 +90,15 @@ class HomeApp extends Component {
         return /*html*/ `
             <div>
                 <main>
-                <button class="shuffle">SHUFFLE</button>
-                <button class="todos">todos for today</button>
-                <section>
-                <div id="home-modal" class="home-modal">
-                    <div class="home-modal-content">
-                        <button class="modal-exit">X</button>
+                    <button class="shuffle">SHUFFLE</button>
+                    <button class="todos">todos for today</button>
+                    <div id="home-modal" class="home-modal">
+                        <div class="home-modal-content">
+                            <button class="modal-exit">X</button>
+                        </div>
                     </div>
                 </main>
-                <footer>
-                </footer>
+                <footer></footer>
             </div>
         `;
 
