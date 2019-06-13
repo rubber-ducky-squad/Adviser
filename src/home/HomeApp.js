@@ -16,6 +16,7 @@ class HomeApp extends Component {
         const shuffleButton = dom.querySelector('button');
         const todoButton = dom.querySelector('.todos');
         const todoModal = dom.querySelector('#home-modal');
+        const exitModal = dom.querySelector('.modal-exit');
         const insideModal = dom.querySelector('.home-modal-content');
 
         const header = new Header();
@@ -49,6 +50,10 @@ class HomeApp extends Component {
 
         todoButton.addEventListener('click', () => {
             todoModal.style.display = 'block';
+        });
+
+        exitModal.addEventListener('click', () => {
+            todoModal.style.display = 'none';
         });
         
         const footer = new Footer();
