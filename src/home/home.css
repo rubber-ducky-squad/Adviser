@@ -45,7 +45,7 @@ footer {
 .advice {
     color: aliceblue;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.685);
@@ -53,6 +53,7 @@ footer {
     z-index: auto;
     width: 400px;
     padding: 5px;
+    font-size: 1.5em;
 }
 
 .loading {
