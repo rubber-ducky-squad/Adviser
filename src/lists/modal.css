@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+.modal-content {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4em;
+    border-radius: 14px;
+    padding: 3%;
+    line-height: 2em;
+    list-style: none;
+}

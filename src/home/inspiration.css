@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+
+.advice-pic img {
+    border-radius: 14px;
+}
+
+.advice {
+    font-family: 'Caveat Brush', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    font-family: 'Indie Flower', cursive;
+}
