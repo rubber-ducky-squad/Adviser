@@ -5,6 +5,7 @@ import Inspiration from './Inspiration.js';
 import adviceApi from '../services/advice-api.js';
 import picApi from '../services/picture-api.js';
 import Loading from '../shared/Loading.js';
+import HomeTodosList from './HomeTodosList.js';
 
 class HomeApp extends Component {
     render() {
@@ -14,6 +15,7 @@ class HomeApp extends Component {
         const shuffleButton = dom.querySelector('button');
         const todoButton = dom.querySelector('.todos');
         const todoModal = dom.querySelector('#home-modal');
+        const insideModal = dom.querySelector('.home-modal-content');
 
         const todaysDate = Date();
         const compareDate = todaysDate < 3;
@@ -27,6 +29,9 @@ class HomeApp extends Component {
 
         const inspiration = new Inspiration({ advice: [], pic: [] });
         main.appendChild(inspiration.render());
+
+        const homeTodosList = new HomeTodosList();
+        insideModal.appendChild(homeTodosList.render());
 
         todoButton.addEventListener('click', () => {
             todoModal.style.display = 'block';
