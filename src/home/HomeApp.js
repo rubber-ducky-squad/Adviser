@@ -7,6 +7,7 @@ import picApi from '../services/picture-api.js';
 import Loading from '../shared/Loading.js';
 import HomeTodosList from './HomeTodosList.js';
 import { auth, todoRef } from '../services/firebase.js';
+import dateFunction from '../utils/date-function.js';
 
 class HomeApp extends Component {
     render() {
@@ -45,7 +46,12 @@ class HomeApp extends Component {
                 allTodos.forEach(allTodo => {
                     todos = todos.concat(allTodo);
                 });
-                homeTodosList.update({ todos });
+                
+                const todaysTodos = todos.filter((todo) => {
+                    return todo.date.includes(dateFunction());
+                });
+                
+                homeTodosList.update({ todos: todaysTodos });
             });
 
         todoButton.addEventListener('click', () => {
