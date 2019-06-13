@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-import AboutUsContent from './AboutUsContent.js';
+import AboutUsList from './AboutUsList.js';
 import Header from '../shared/Header.js';
 import Footer from '../shared/Footer.js';
 
@@ -12,8 +12,8 @@ class AboutUsApp extends Component {
         const header = new Header();
         dom.insertBefore(header.render(), main);
 
-        const aboutUsContent = new AboutUsContent();
-        main.appendChild(aboutUsContent.render());
+        const aboutUsList = new AboutUsList();
+        main.appendChild(aboutUsList.render());
 
         const footer = new Footer();
         footerTag.appendChild(footer.render());
