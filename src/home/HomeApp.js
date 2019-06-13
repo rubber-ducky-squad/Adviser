@@ -17,10 +17,6 @@ class HomeApp extends Component {
         const todoModal = dom.querySelector('#home-modal');
         const insideModal = dom.querySelector('.home-modal-content');
 
-        const todaysDate = Date();
-        const compareDate = todaysDate < 3;
-        console.log(compareDate)
-
         const header = new Header();
         dom.insertBefore(header.render(), main);   
 
