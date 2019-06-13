@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
 
+header h1 {
+    margin: 0;
+}
+
 header {
     background-color: rgb(241, 227, 240);
     color: rgb(78, 2, 255);
