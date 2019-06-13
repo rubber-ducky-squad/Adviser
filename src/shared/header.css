@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 
 header h1 {
     margin: 0;
+    letter-spacing: 40px;
+    font-family: 'Dokdo', cursive;
+}
+
+header h3 {
+    font-family: 'Indie Flower', cursive;
+    margin-top: -30px;
 }
 
 header {
-    background-color: rgb(241, 227, 240);
-    color: rgb(78, 2, 255);
-    font-family: 'Dokdo', cursive;
+    color: rgb(138, 122, 165);
     font-size: 2.2em;
     top: 0;
 }

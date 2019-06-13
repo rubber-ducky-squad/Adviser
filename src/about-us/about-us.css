@@ -1,0 +1,30 @@
+#about-us-list {
+    display: grid;
+    justify-content: center;
+}
+
+.about-item {
+    align-items: center;
+    list-style: none;
+    box-shadow: 0px 2px 2px #aaa;
+    background: rgba(255, 255, 255, 0.669);
+    padding: 10px 10px 10px 10px;
+    height: 500px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.personal-advice {
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.685);
+    text-shadow: 5px 5px  black;
+    z-index: auto;
+    width: 200px;
+    padding: 5px;
+    font-size: 1.4em;
+}
