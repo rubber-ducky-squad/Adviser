@@ -3,13 +3,13 @@
 body {
     text-align: center;
     background-color: rgba(148, 148, 230, 0.288);
+    background-image: url('/../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-/* header {
-    background-color: rgba(148, 148, 230, 0.466);
-    color: rgb(78, 2, 255);
-    font-family: 'Times New Roman', Times, serif;
-} */
+
 
 footer {
     background-color: rgba(84, 84, 133, 0.836);
@@ -55,16 +55,17 @@ main {
     box-shadow: 0px 2px 2px #aaa;
     background: rgba(255, 255, 255, 0.39);
     padding: 10px 0 10px 0;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
 .images {
-    width: 280px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
 }
 
 .advice {
+    font-family: 'Indie Flower', cursive;
     color: aliceblue;
     position: absolute;
     top: 50%;
@@ -73,9 +74,9 @@ main {
     background-color: rgba(0, 0, 0, 0.685);
     text-shadow: 5px 5px  black;
     z-index: auto;
-    width: 260px;
+    width: 200px;
     padding: 5px;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .favorite-button {
@@ -94,7 +95,7 @@ main {
 
 .favorites-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 7px;
     gap: 7px;
     padding: 0;

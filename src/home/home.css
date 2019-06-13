@@ -19,7 +19,18 @@ body {
 .shuffle {
     background-color: rgba(11, 51, 136, 0.664);
     border: none;
-    width: 90px;
+    width: 120px;
+    height: 25px;
+    margin: 10px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.todos {
+    background-color: rgba(11, 51, 136, 0.664);
+    border: none;
+    width: 120px;
+    height: 25px;
     margin: 10px;
     color: antiquewhite;
     border-radius: 5px;
