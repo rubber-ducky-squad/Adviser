@@ -19,6 +19,7 @@ class HomeTodosList extends Component {
         if(todos.length === 0) {
             return /*html*/`
                 <ul>
+                    <a class="task-link" href="./tasks.html">Go to your Todos</a>
                     <h2 class="no-tasks">You don't have any tasks due today,
                     let your daily moddo inspire you to make some!</h2>
                 </ul>
