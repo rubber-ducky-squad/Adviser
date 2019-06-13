@@ -13,7 +13,7 @@ class AboutUsContent extends Component {
 
     renderTemplate() {
         return /*html*/`
-            <ul></ul>
+            <ul id="about-us-list"></ul>
         `;
     }
 }
