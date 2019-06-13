@@ -6,6 +6,7 @@ import adviceApi from '../services/advice-api.js';
 import picApi from '../services/picture-api.js';
 import Loading from '../shared/Loading.js';
 import HomeTodosList from './HomeTodosList.js';
+import { auth, todoRef, listRef } from '../services/firebase.js';
 
 class HomeApp extends Component {
     render() {
@@ -26,8 +27,26 @@ class HomeApp extends Component {
         const inspiration = new Inspiration({ advice: [], pic: [] });
         main.appendChild(inspiration.render());
 
-        const homeTodosList = new HomeTodosList();
+        const homeTodosList = new HomeTodosList({ todos: [] });
         insideModal.appendChild(homeTodosList.render());
+
+        const todoListRef = todoRef
+            .child(auth.currentUser.uid)
+            // .child(list.key);
+
+        todoListRef
+            .on('value', snapshot => {
+                const value = snapshot.val();
+                const allLists = value ? Object.values(value) : [];
+                const allTodos = allLists.map(list => {
+                    return Object.values(list);
+                });
+                let todos = [];
+                allTodos.forEach(allTodo => {
+                    todos = todos.concat(allTodo);
+                });
+                homeTodosList.update({ todos });
+            });
 
         todoButton.addEventListener('click', () => {
             todoModal.style.display = 'block';
