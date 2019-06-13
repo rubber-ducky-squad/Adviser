@@ -115,8 +115,8 @@ class HomeApp extends Component {
         return /*html*/ `
             <div>
                 <main>
-                    <button class="shuffle">SHUFFLE</button>
-                    <button class="todos">todos for today</button>
+                    <button class="shuffle">Shuffle</button>
+                    <button class="todos">Todos for Today</button>
                     <div id="home-modal" class="home-modal">
                         <div class="home-modal-content">
                             <button class="modal-exit">X</button>
@@ -124,9 +124,9 @@ class HomeApp extends Component {
                     </div>
                     <div id="alert-modal" class="alert-modal">
                         <div class="alert-modal-content">
-                            <p>When life gives you a moddo and you do not 
-                            like it, make moddo-aid, (aka, you pressed shuffle too many times, now move on)!</p>
                             <button class="alert-modal-exit">X</button>
+                            <p class="no-todo-message">When life gives you a moddo and you do not 
+                            like it, make moddo-aid, (aka, you pressed shuffle too many times, now move on)!</p>
                         </div>
                     </div>
                 </main>
