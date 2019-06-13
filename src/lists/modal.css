@@ -26,11 +26,10 @@ li {
 }
 
 .modal-content {
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.4em;
+    font-size: 1.5em;
     border-radius: 14px;
     line-height: 2em;
-    background-color: #5c41d6d2;
+    background-color: rgba(62, 64, 103, 0.902);
     margin: 1% auto; 
     padding: 10px;
     border: 1px solid #888;
