@@ -124,8 +124,8 @@ class HomeApp extends Component {
                     </div>
                     <div id="alert-modal" class="alert-modal">
                         <div class="alert-modal-content">
-                            <p>When life gives you a moddo you do not 
-                            like, make moddo-aid, (aka, pick one and stick with it</p>
+                            <p>When life gives you a moddo and you do not 
+                            like it, make moddo-aid, (aka, you pressed shuffe too many times, now move on)!</p>
                             <button class="alert-modal-exit">X</button>
                         </div>
                     </div>
