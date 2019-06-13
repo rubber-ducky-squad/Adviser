@@ -79,7 +79,7 @@ footer {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 110px;
+    top: 210px;
     left:50% ;
     transform: translate(-50%);
     color: rgb(255, 60, 0);
