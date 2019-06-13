@@ -21,15 +21,13 @@
 
 .modal-exit {
     position: absolute;
-    top: 20px;
-    
+    top: 20px;  
     border-radius: 100%;
     background-color: rgba(22, 22, 128, 0.801);
     border: none;
 }
 
 .task-item {
-    display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -45,12 +43,14 @@
 }
 
 .task-list {
-    
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
     grid-gap: 7px;
     gap: 7px;
-    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: center;
+
 }
 
 .list-button, .delete-list {

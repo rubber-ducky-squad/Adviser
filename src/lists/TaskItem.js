@@ -56,7 +56,7 @@ class TaskItem extends Component {
         return /*html*/`
             <li class="task-item">
                 <span>
-                    <p><h2>${list.title}</h2></p>
+                    <h2>${list.title}</h2>
                     <section>
                         <button class="list-button">Open List</button>
                         <button class="delete-list">Delete</button>

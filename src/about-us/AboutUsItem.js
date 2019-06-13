@@ -5,47 +5,56 @@ class AboutUsItem extends Component {
             <section>
                 <li class="about-item">
                     <div>
-                        <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg"> 
-                        <h2>Vasily</h2>
-                        <p>Stuff about Vasily</p>
+                        <h2>Vasily Markov</h2>
+                        <img src="./assets/vasily.jpg"> 
+                        <p class="personal-advice">"Want to experience euphoria?<br> Find a typo" </p>
+                        <p>Student at Aclhemy Code Lab. Excited about new experiences, and lifelong learning.
+                        Devoted sleepyhead.</p>
+                        <p><a href="https://github.com/Vasily93">Checkout his github.</a></p>
                     </div>
                 </li>
                 <li class="about-item">
                     <div>
-                        <p class="personal-advice" ></p>
-                        <img src="./assets/placeholder.jpg">
-                        <h2>Danny</h2>
-                        <p>Stuff about Danny</p>
+                        <h2>Danny Suarez</h2>
+                        <img src="./assets/danny.jpg">
+                        <p class="personal-advice">“Always commit to Git”</p>
+                        <p>About me - currently spending 8 hours a day staring at screen.</p>
+                        <p><a href="https://github.com/DannySuarez">Checkout his github.</a></p>
                     </div>
                 </li>
                 <li class="about-item">
-                    <div>
-                        <p class="personal-advice">"1) Be courageous. 2) Dare to fail. 3) Learn. 4) Dare to fail again. 5) Reapeat."</p>
-                        <img src="./assets/placeholder.jpg">
+                    <div class='item-content'>
                         <h2>Alex Ramirez de Cruz</h2>
+                        <img src="./assets/alex.jpg">
+                        <p class="personal-advice">"1) Be courageous. 2) Dare to fail. 3) Learn. 4) Dare to fail again. 5) Reapeat."</p>
                         <p>Alex is a software developer, theatre artist, and avid embroiderer...Oh
-                        and she is also an obsessive list-maker, (so she is excited to use Moddo)!
-                        <a href="https://github.com/aramirezdecruz3148">Checkout her github.</a></p>
+                        and she is also an obsessive list-maker, (so she is excited to use Moddo)!</p>
+                        <p><a href="https://github.com/aramirezdecruz3148">Checkout her github.</a></p>
                     </div>
                 </li>
                 <li class="about-item">
                     <div>
-                        <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg">
-                        <h2>Emily</h2>
-                        <p>Stuff about Emily</p>
+                        <h2>Emily F</h2>
+                        <img src="./assets/emily.jpg">
+                        <p class="personal-advice">"Don't take advice from me"</p>
+                        <p>About me - single mom, cat lady, old vegan.</p>
+                        <p><a href="https://github.com/mle4d">Checkout her github.</a></p>
                     </div>
                 </li>
                 <li class="about-item">
                     <div>
-                        <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg">
-                        <h2>Jon</h2>
-                        <p>Stuff about Jon</p>
+                        <h2>Jon Forney</h2>
+                        <img src="./assets/jon.jpg">
+                        <p class="personal-advice">"If you ever drop your keys into a river of molten lava, let 'em go, because man, they're gone."</p>
+                        <p>Jon has spent the last 8 weeks going insane (and learning JavaScript) and he is very excited to have the next week off.</p>
+                        <p><a href="https://github.com/MustardJoe">Checkout his github.</a></p>
                     </div>
                 </li>
-            </section>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                <li>*</li>
+                </section>
         `;
     }
 }
