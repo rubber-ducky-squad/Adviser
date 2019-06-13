@@ -6,7 +6,7 @@ class AboutUsItem extends Component {
                 <li class="about-item">
                     <div>
                         <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg"> 
+                        <img src="./assets/placeholder.jpg" alt="photo of Vasily"> 
                         <h2>Vasily</h2>
                         <p>Stuff about Vasily</p>
                     </div>
@@ -14,7 +14,7 @@ class AboutUsItem extends Component {
                 <li class="about-item">
                     <div>
                         <p class="personal-advice" ></p>
-                        <img src="./assets/placeholder.jpg">
+                        <img src="./assets/placeholder.jpg" alt="photo of Danny">
                         <h2>Danny</h2>
                         <p>Stuff about Danny</p>
                     </div>
@@ -22,7 +22,7 @@ class AboutUsItem extends Component {
                 <li class="about-item">
                     <div>
                         <p class="personal-advice">"1) Be courageous. 2) Dare to fail. 3) Learn. 4) Dare to fail again. 5) Reapeat."</p>
-                        <img src="./assets/placeholder.jpg">
+                        <img src="./assets/placeholder.jpg" alt="photo of Alex">
                         <h2>Alex Ramirez de Cruz</h2>
                         <p>Alex is a software developer, theatre artist, and avid embroiderer...Oh
                         and she is also an obsessive list-maker, (so she is excited to use Moddo)!
@@ -32,7 +32,7 @@ class AboutUsItem extends Component {
                 <li class="about-item">
                     <div>
                         <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg">
+                        <img src="./assets/placeholder.jpg" alt="photo of Emily">
                         <h2>Emily</h2>
                         <p>Stuff about Emily</p>
                     </div>
@@ -40,7 +40,7 @@ class AboutUsItem extends Component {
                 <li class="about-item">
                     <div>
                         <p class="personal-advice"></p>
-                        <img src="./assets/placeholder.jpg">
+                        <img src="./assets/placeholder.jpg" alt="photo of Jon">
                         <h2>Jon</h2>
                         <p>Stuff about Jon</p>
                     </div>
