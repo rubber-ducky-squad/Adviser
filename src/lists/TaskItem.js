@@ -55,22 +55,23 @@ class TaskItem extends Component {
         const list = this.props.list;
         return /*html*/`
             <li class="task-item">
-            <span>
-                <p><h2>${list.title}</h2></p>
-                <section>
-                    <button class="list-button">Open List</button>
-                    <button class="delete-list">Delete</button>
-                </section>
+                <span>
+                    <p><h2>${list.title}</h2></p>
+                    <section>
+                        <button class="list-button">Open List</button>
+                        <button class="delete-list">Delete</button>
+                    </section>
                 </span>
                 <section>
-                <div id="modal" class="modal">
-                    <div class="modal-content">
-                        <button class="modal-exit">X</button>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <button class="modal-exit">X</button>
+                        </div>
                     </div>
-                </div>
                 </section>
             </li>
         `;
     }
 }
+
 export default TaskItem;

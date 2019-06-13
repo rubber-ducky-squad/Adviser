@@ -2,7 +2,6 @@ import Component from '../Component.js';
 import FavoritesItem from './FavoritesItem.js';
 
 class FavoritesList extends Component {
-    
     render() {
         const dom = this.renderDOM();
 

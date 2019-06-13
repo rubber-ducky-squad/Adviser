@@ -13,10 +13,12 @@ class TaskList extends Component {
 
         return dom;
     }
+
     renderTemplate() {
         return /*html*/`
             <ul class="task-list"></ul>
         `;
     }
 }
+
 export default TaskList;

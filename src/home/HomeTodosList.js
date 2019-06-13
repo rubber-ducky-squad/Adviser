@@ -20,4 +20,5 @@ class HomeTodosList extends Component {
         `;
     }
 }
+
 export default HomeTodosList;

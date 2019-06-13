@@ -33,8 +33,8 @@ class FavoritesApp extends Component {
     renderTemplate() {
         return /*html*/ `
             <div>
-            <main></main>
-            <footer></footer>
+                <main></main>
+                <footer></footer>
             </div>
         `;
     }

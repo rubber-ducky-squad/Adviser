@@ -22,6 +22,7 @@ class AddTaskList extends Component {
                 form.reset();
             });
         });
+
         return form;
     }
 
@@ -37,4 +38,5 @@ class AddTaskList extends Component {
         `;
     }
 }
+
 export default AddTaskList;

@@ -2,7 +2,6 @@ import Component from '../Component.js';
 import { auth } from '../services/firebase.js';
 
 class Profile extends Component {
-
     render() {
         const dom = this.renderDOM();
 

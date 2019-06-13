@@ -32,10 +32,10 @@ class FavoritesItem extends Component {
         
         return /*html*/`
             <li class="favorites-item">
-            <div class="favorite-container">
-            <h1 class="advice">"${favorite.advice}"</h1>
-            <img src="${favorite.pic}" class="images" alt="random stock photo">
-            </div>
+                <div class="favorite-container">
+                    <h1 class="advice">"${favorite.advice}"</h1>
+                    <img src="${favorite.pic}" class="images" alt="random stock photo">
+                </div>
             </li>
         `;
     }
