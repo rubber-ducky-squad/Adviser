@@ -20,9 +20,9 @@ class AboutUsItem extends Component {
                     <p>"1) Be courageous. 2) Dare to fail. 3) Learn. 
                     4) Dare to fail again. 5) Reapeat."</p>
                     <h2>Alex Ramirez de Cruz</h2>
-                    <p>Alex is a software devemoper, performer, and avid embroiderer. Oh
+                    <p>Alex is a software developer, theatre artist, and avid embroiderer...Oh
                     and she is also an obsessive list-maker, (so she is excited to use Moddo)!
-                    <a href="https://github.com/aramirezdecruz3148">Checkout her github</a></p>
+                    <a href="https://github.com/aramirezdecruz3148">Checkout her github.</a></p>
                 </li>
                 <li class="Emily">
                     <img>
