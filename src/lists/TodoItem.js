@@ -32,19 +32,19 @@ class TodoItem extends Component {
 
         if(todo.date === '') {
             return /*html*/`
-            <li>
+            <li class="todo">
                 <label for="${todo.todo}">
                     <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo} ${date}
-                    <button>X</button>
+                    <button class="todo-delete">X</button>
                 </label>
             </li>
         `;
         }
         return /*html*/`
-            <li>
+            <li class="todo">
                 <label for="${todo.todo}">
                     <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}, complete by: ${date}
-                    <button>X</button>
+                    <button class="todo-delete">X</button>
                 </label>
             </li>
         `;

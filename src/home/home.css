@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
 body {
     text-align: center;
     background-color: rgba(148, 148, 230, 0.288);
@@ -15,7 +17,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-
 }
 
 .shuffle {
@@ -73,3 +74,62 @@ body {
     height: 80%;
 }
 
+.alert-modal-exit {
+    position: absolute;
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    background-color: rgba(22, 22, 128, 0.93);
+    border: none;
+    margin-left: -20px;
+    margin-bottom: 5px;
+}
+
+.modal-exit {
+    color: white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    background-color: rgba(22, 22, 128, 0.93);
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.no-todo-message {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    color: white;
+    margin-top: 80px;
+}
+
+.no-tasks {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    margin-top: 80px;
+}
+
+.task-link {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 1.5em;
+}
+
+.todays-todos {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4em;
+    color: white;
+}
+
+.home-todo-align {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}

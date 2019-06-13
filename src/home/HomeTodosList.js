@@ -19,14 +19,15 @@ class HomeTodosList extends Component {
         if(todos.length === 0) {
             return /*html*/`
                 <ul>
-                    <h2>You don't have any tasks due today,
+                    <h2 class="no-tasks">You don't have any tasks due today,
                     let your daily moddo inspire you to make some!</h2>
-                    <a href="./tasks.html">Go to your Tasks</a>
                 </ul>
             `;
         }
         return /*html*/`
-            <ul id="home-todos"></ul>
+            <ul id="home-todos">
+                <a class="task-link" href="./tasks.html">Go to your Todos</a>
+            </ul>
         `;
     }
 }
