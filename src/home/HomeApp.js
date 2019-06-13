@@ -6,7 +6,7 @@ import adviceApi from '../services/advice-api.js';
 import picApi from '../services/picture-api.js';
 import Loading from '../shared/Loading.js';
 import HomeTodosList from './HomeTodosList.js';
-import { auth, todoRef, listRef } from '../services/firebase.js';
+import { auth, todoRef } from '../services/firebase.js';
 
 class HomeApp extends Component {
     render() {
@@ -31,8 +31,7 @@ class HomeApp extends Component {
         insideModal.appendChild(homeTodosList.render());
 
         const todoListRef = todoRef
-            .child(auth.currentUser.uid)
-            // .child(list.key);
+            .child(auth.currentUser.uid);
 
         todoListRef
             .on('value', snapshot => {
