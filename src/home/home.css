@@ -67,12 +67,20 @@ body {
 }
 
 .home-modal-content, .alert-modal-content {
-    background-color: #5c41d6d2;
+    background-color: rgba(62, 64, 103, 0.902);
     margin: 1% auto; 
-    padding: 10px;
     border: 1px solid #888;
     width: 60%;
     height: 80%;
+    border-radius: 14px;
+}
+
+.home-modal-content {
+    padding: 30px;
+}
+
+.alert-modal-content {
+    padding: 30px;
 }
 
 .alert-modal-exit {
@@ -101,20 +109,17 @@ body {
 }
 
 .no-todo-message {
-    font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
     color: white;
     margin-top: 80px;
 }
 
 .no-tasks {
-    font-family: 'Indie Flower', cursive;
     color: white;
     margin-top: 80px;
 }
 
 .task-link {
-    font-family: 'Indie Flower', cursive;
     color: white;
     font-size: 1.5em;
 }
