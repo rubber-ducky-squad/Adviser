@@ -124,17 +124,22 @@ body {
     font-size: 1.5em;
 }
 
-.todays-todos p {
+.todays-todos {
     display: flex;
     align-items: left;
-    justify-content: left;
-    flex-direction: column;
     font-size: 1.4em;
     color: white;
+    margin-top: 10px;
 }
 
-.home-todo-align {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+.todo-delete {
+    margin-left: 10px;
+    color: white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    font-size: .5em;
+    padding: 0;
+    background-color: rgba(22, 22, 128, 0.93);
+    border: none;
 }

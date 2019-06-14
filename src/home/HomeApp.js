@@ -40,10 +40,15 @@ class HomeApp extends Component {
         todoListRef
             .on('value', snapshot => {
                 const value = snapshot.val();
-                const allLists = value ? Object.values(value) : [];
-                const allTodos = allLists.map(list => {
-                    return Object.values(list);
+                const allLists = value ? Object.entries(value) : [];
+                const allTodos = allLists.map(entry => {
+                    const todosAndListKeys = Object.values(entry[1]);
+                    todosAndListKeys.forEach(todosAndListKey => {
+                        todosAndListKey.listKey = entry[0];
+                    });
+                    return todosAndListKeys;
                 });
+                
                 let todos = [];
                 allTodos.forEach(allTodo => {
                     todos = todos.concat(allTodo);

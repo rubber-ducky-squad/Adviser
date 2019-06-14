@@ -22,7 +22,6 @@ class Profile extends Component {
         }
 
         const avatar = user.photoURL || './assets/profile.png';
-
         return /*html*/`
             <div class="profile">
                 <button class="sign-out">Sign Out</button>
