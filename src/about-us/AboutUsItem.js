@@ -8,7 +8,7 @@ class AboutUsItem extends Component {
                         <h2>Vasily Markov</h2>
                         <img src="./assets/vasily.jpg"> 
                         <p class="personal-advice">"Want to experience euphoria?<br> Find a typo" </p>
-                        <p>Student at Aclhemy Code Lab. Excited about new experiences, and lifelong learning.
+                        <p>Student at Alchemy Code Lab. Excited about new experiences, and lifelong learning.
                         Devoted sleepyhead.</p>
                         <p><a href="https://github.com/Vasily93">Checkout his github.</a></p>
                     </div>
@@ -34,10 +34,10 @@ class AboutUsItem extends Component {
                 </li>
                 <li class="about-item">
                     <div>
-                        <h2>Emily F</h2>
+                        <h2>Emily</h2>
                         <img src="./assets/emily.jpg">
                         <p class="personal-advice">"Don't take advice from me"</p>
-                        <p>About me - single mom, cat lady, old vegan.</p>
+                        <p>Single mom, cat lady, old vegan.</p>
                         <p><a href="https://github.com/mle4d">Checkout her github.</a></p>
                     </div>
                 </li>
