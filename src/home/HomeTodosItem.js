@@ -6,7 +6,7 @@ class HomeTodosItem extends Component {
         return /*html*/`
                 <section class="todays-todos">
                     <label class="home-todo-align" for="${todo.todo}">
-                        <input id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}
+                        <p>• ${todo.todo}</p>
                     </label>
                 </section
             `;
