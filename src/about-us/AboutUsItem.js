@@ -18,7 +18,7 @@ class AboutUsItem extends Component {
                         <h2>Danny Suarez</h2>
                         <img src="./assets/danny.jpg">
                         <p class="personal-advice">“Always commit to Git”</p>
-                        <p>About me - currently spending 8 hours a day staring at screen.</p>
+                        <p>Currently spending 8 hours a day staring at screen.</p>
                         <p><a href="https://github.com/DannySuarez">Checkout his github.</a></p>
                     </div>
                 </li>
