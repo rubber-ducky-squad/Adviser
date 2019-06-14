@@ -12,4 +12,5 @@ class HomeTodosItem extends Component {
             `;
     }
 }
+
 export default HomeTodosItem;  

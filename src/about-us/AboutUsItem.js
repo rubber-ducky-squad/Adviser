@@ -1,4 +1,5 @@
 import Component from '../Component.js';
+
 class AboutUsItem extends Component {
     renderTemplate() {
         return /*html*/`
@@ -58,4 +59,5 @@ class AboutUsItem extends Component {
         `;
     }
 }
+
 export default AboutUsItem;

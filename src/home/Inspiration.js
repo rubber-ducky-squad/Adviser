@@ -44,7 +44,6 @@ class Inspiration extends Component {
         if(!pic.url) {
             pic.url = '../../assets/placeholder.jpg';
         }
-
         return /*html*/`
             <div class="advice-pic">
                 <h1 class="advice">"${advice.advice}"</h1>

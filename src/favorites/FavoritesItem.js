@@ -29,7 +29,6 @@ class FavoritesItem extends Component {
 
     renderTemplate() {
         const favorite = this.props.favorite;
-        
         return /*html*/`
             <li class="favorites-item">
                 <div class="favorite-container">

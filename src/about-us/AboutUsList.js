@@ -18,4 +18,5 @@ class AboutUsContent extends Component {
         `;
     }
 }
+
 export default AboutUsContent;
