@@ -29,6 +29,9 @@ footer a {
     position: fixed;
     bottom: 5px;
     right: 20px;  
+    font-family: 'Dokdo', cursive;
+    font-size: 2em;
+    color: aliceblue;
 }
 
 .avatar {
