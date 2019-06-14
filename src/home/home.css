@@ -124,12 +124,12 @@ body {
     font-size: 1.5em;
 }
 
-.todays-todos {
+.todays-todos p {
     display: flex;
     align-items: left;
     justify-content: left;
     flex-direction: column;
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
     font-size: 1.4em;
     color: white;
 }
