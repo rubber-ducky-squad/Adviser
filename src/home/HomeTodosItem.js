@@ -4,14 +4,18 @@ import { auth, todoRef } from '../services/firebase.js';
 class HomeTodosItem extends Component {
     render() {
         const dom = this.renderDOM();
+        const checkbox = dom.querySelector('#checkbox');
+        const deleteTodo = dom.querySelector('.todo-delete');
         const todo = this.props.todo;
     
-        const checkbox = dom.querySelector('#checkbox');
-
         checkbox.addEventListener('change', () => {
             todoRef.child(auth.currentUser.uid).child(todo.listKey).child(todo.key).update({
                 completed: checkbox.checked
             });
+        });
+
+        deleteTodo.addEventListener('click', () => {
+            todoRef.child(auth.currentUser.uid).child(todo.listKey).child(todo.key).remove();
         });
 
         return dom;
