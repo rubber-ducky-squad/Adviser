@@ -64,5 +64,11 @@
 
 .list-button:hover, .delete-list:hover {
     background-color: rgba(11, 51, 136, 0.89);
-    
 }
+
+.task-item h2 {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} 
