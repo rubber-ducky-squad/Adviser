@@ -5,6 +5,7 @@ header h1 {
     margin: 0;
     letter-spacing: 40px;
     font-family: 'Dokdo', cursive;
+    margin-top: -26px;
 }
 
 header h3 {
