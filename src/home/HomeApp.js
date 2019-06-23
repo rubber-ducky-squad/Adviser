@@ -41,6 +41,8 @@ class HomeApp extends Component {
             .on('value', snapshot => {
                 const value = snapshot.val();
                 const allLists = value ? Object.entries(value) : [];
+
+                // this section here should be own function
                 const allTodos = allLists.map(entry => {
                     const todosAndListKeys = Object.values(entry[1]);
                     todosAndListKeys.forEach(todosAndListKey => {
@@ -53,6 +55,7 @@ class HomeApp extends Component {
                 allTodos.forEach(allTodo => {
                     todos = todos.concat(allTodo);
                 });
+                // end function
                 
                 const todaysTodos = todos.filter((todo) => {
                     return todo.date.includes(dateFunction());

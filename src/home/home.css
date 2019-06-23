@@ -84,8 +84,9 @@ body {
     padding: 30px;
 }
 
-.alert-modal-exit {
-    position: absolute;
+// extrapolate common styling into own class,
+// then apply to elements
+.some-class {
     color: white;
     border-radius: 100%;
     width: 50px;
@@ -93,18 +94,29 @@ body {
     font-size: 1em;
     background-color: rgba(22, 22, 128, 0.93);
     border: none;
+}
+
+.alert-modal-exit {
+    position: absolute;
+    // color: white;
+    // border-radius: 100%;
+    // width: 50px;
+    // height: 50px;
+    // font-size: 1em;
+    // background-color: rgba(22, 22, 128, 0.93);
+    // border: none;
     margin-left: -20px;
     margin-bottom: 5px;
 }
 
 .modal-exit {
-    color: white;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    font-size: 1em;
-    background-color: rgba(22, 22, 128, 0.93);
-    border: none;
+    // color: white;
+    // border-radius: 100%;
+    // width: 50px;
+    // height: 50px;
+    // font-size: 1em;
+    // background-color: rgba(22, 22, 128, 0.93);
+    // border: none;
     margin-left: 20px;
     margin-bottom: 5px;
 }

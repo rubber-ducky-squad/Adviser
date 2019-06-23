@@ -55,7 +55,7 @@ class AboutUsItem extends Component {
                 <li>*</li>
                 <li>*</li>
                 <li>*</li>
-                </section>
+            </section>
         `;
     }
 }

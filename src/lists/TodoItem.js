@@ -25,25 +25,16 @@ class TodoItem extends Component {
     renderTemplate() {
         const todo = this.props.todo;
         const date = todo.date.split('-').reverse().join('-');
-        let checked = '';
-        if(todo.completed) {
-            checked = 'checked';
-        }
+        
+        const checked = todo.completed ? 'checked' : '';
+        // make it DRYer!
+        const dateDisplay = todo.date === '' ? '' : `, complete by: ${date}`;
 
-        if(todo.date === '') {
-            return /*html*/`
-            <li class="todo">
-                <label for="${todo.todo}">
-                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo} ${date}
-                    <button class="todo-delete">X</button>
-                </label>
-            </li>
-        `;
-        }
         return /*html*/`
             <li class="todo">
                 <label for="${todo.todo}">
-                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">${todo.todo}, complete by: ${date}
+                    <input ${checked} id="checkbox" name="checkbox" value="${todo.completed}" type="checkbox">
+                    ${todo.todo}${dateDisplay}
                     <button class="todo-delete">X</button>
                 </label>
             </li>
